@@ -137,6 +137,8 @@ export function useLinkColor() {
     return useColorModeValue(linkColors.light, linkColors.dark)
 }
 
+
+
 export function useVisitedLinkColor() {
     return useColorModeValue(linkColors.visitedLight, linkColors.visitedDark)
 }
