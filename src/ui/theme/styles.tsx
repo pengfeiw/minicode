@@ -78,6 +78,10 @@ export const styles: Styles = {
         },
         "li > ul, li > ol": {
             mb: 0
+        },
+        "img": {
+            boxShadow: "0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)",
+            borderRadius: "5px"
         }
     })
 }
