@@ -8,14 +8,6 @@ const Home: LayoutPage = () => {
 
     return (
         <Box>
-            {/* {
-                codes.map((code) => (
-                    <Box key={code.url}>
-                        <Image src={code.image} alt={code.description} />
-                        <Text>{code.name}</Text>
-                    </Box>
-                ))
-            } */}
             <Grid wrap="wrap" gridRowGap="30px" gridColumnGap="20px" gridTemplateColumns={["repeat(1, 95%)", "repeat(2, 45%)", "repeat(3, 31%)"]}>
                 {
                     codes.map((code) => (
