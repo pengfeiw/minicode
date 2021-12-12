@@ -4,7 +4,7 @@ import Header from "src/components/header";
 import {LayoutPage} from "../typing";
 import codes from "src/server/codes";
 import {useLinkColor} from "src/ui/theme";
-import {RouteLink} from "src/components/link";
+import {OutgoingLink, RouteLink} from "src/components/link";
 
 const Home: LayoutPage = () => {
     const Textcolor = useLinkColor();
@@ -39,9 +39,9 @@ const Home: LayoutPage = () => {
                                         background: "#bababacc"
                                     }}
                                 >
-                                    <RouteLink flexGrow={0} to={`./${code.path}`} cursor="pointer">
+                                    <OutgoingLink flexGrow={0} href={`./${code.path}`} cursor="pointer">
                                         {code.description}
-                                    </RouteLink>
+                                    </OutgoingLink>
                                 </Flex>
                             </Box>
                         </Box>

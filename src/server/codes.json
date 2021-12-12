@@ -1,7 +1,7 @@
 [
     {
         "path": "3d-tetris",
-        "name": "3D 俄罗斯方块（3d-tetris）",
+        "name": "3D 俄罗斯方块",
         "url": "https://pengfeiw.github.io/3d-tetris",
         "image": "./images/3d-tetris.jpg",
         "description": "使用 WebGL 和 TypeScript 绘制的三维俄罗斯方块游戏。",
@@ -39,7 +39,7 @@
     },
     {
         "path": "solar-system",
-        "name": "太阳系动画（Solar System）",
+        "name": "太阳系动画",
         "url": "https://pengfeiw.github.io/solar-system",
         "image": "./images/solar-system.jpg",
         "description": "使用 WebGL 和 TypeScript 绘制的太阳系动画。",

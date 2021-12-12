@@ -1,11 +1,16 @@
 import React from "react";
 import {Box, Text} from "@chakra-ui/react";
 import {OutgoingLink} from "src/components/link";
+import {H1} from "../primitives/typography";
 
 const Footer = () => (
     <Box mt="60px">
         <Text textAlign="center">
-            <OutgoingLink href="https://pengfeiw.github.io/minicode/sitemap.xml">📖sitemap </OutgoingLink>
+            <OutgoingLink href="https://pengfeiw.github.io/minicode/sitemap.xml">
+                <H1 fontSize="inherit" fontWeight="normal" display="inline"> 🛕minicode </H1>
+            </OutgoingLink>
+            |
+            <OutgoingLink href="https://pengfeiw.github.io/minicode/sitemap.xml"> 📖sitemap </OutgoingLink>
             |
             <OutgoingLink href="https://pengfeixc.com"> 🏔WangPF</OutgoingLink>
         </Text>

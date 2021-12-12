@@ -5,6 +5,7 @@ import {Text, Flex} from "@chakra-ui/react";
 import Header from "src/components/header";
 import {LayoutPage} from "../../typing";
 import {NextSeo} from "next-seo";
+import {H1} from "src/components/primitives/typography";
 
 interface CodeProps {
     code: ICode;
@@ -33,6 +34,7 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
             />
             <Header githubSrc={code.repository} newWindowSrc={code.url} />
             <Text mb={2} fontSize="sm">
+                《<H1 display="inline" fontWeight="normal" fontSize="inherit">{code.name}</H1>》
                 {code.description}
             </Text>
             <iframe src={code.url} style={{flexGrow: 1, borderRadius: "5px"}} />
