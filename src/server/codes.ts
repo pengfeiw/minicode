@@ -35,7 +35,7 @@ const getCodes = (): Code[] => [
         description: "使用 WebGL 和 TypeScript 绘制的太阳系动画。",
         keywords: ["太阳系", "Solar System", "3D animation", "动画", "WebGL", "三维"],
         repository: "https://github.com/pengfeiw/solar-system"
-    },
+    }
 ];
 
 export default getCodes();

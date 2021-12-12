@@ -14,6 +14,10 @@ interface CodeProps {
 const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
     const {code} = props;
 
+    if (!code) {
+        return <></>;
+    }
+
     return (
         <>
             <Header githubSrc={code.repository} newWindowSrc={code.url} />
