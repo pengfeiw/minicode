@@ -55,12 +55,10 @@ const Heading: React.FC<HeadingProps> = ({
                     _hover={{
                         opacity: 1,
                         color: useLinkColor(),
-                        textDecoration: "underline"
                     }}
                     _focus={{
                         opacity: 1,
                         color: useLinkColor(),
-                        textDecoration: "underline"
                     }}
                 >
                     #

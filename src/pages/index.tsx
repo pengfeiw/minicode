@@ -4,9 +4,9 @@ import Header from "src/components/header";
 import {LayoutPage} from "../typing";
 import codes from "src/server/codes";
 import {useLinkColor} from "src/ui/theme";
+import {RouteLink} from "src/components/link";
 
 const Home: LayoutPage = () => {
-
     const Textcolor = useLinkColor();
 
     const backgroundColor = useColorModeValue("#f7fafc", "#3d4756");
@@ -38,11 +38,10 @@ const Home: LayoutPage = () => {
                                         color: "white",
                                         background: "#bababacc"
                                     }}
-                                    cursor="pointer"
                                 >
-                                    <Text flexGrow={0}>
+                                    <RouteLink flexGrow={0} to={`./${code.path}`} cursor="pointer">
                                         {code.description}
-                                    </Text>
+                                    </RouteLink>
                                 </Flex>
                             </Box>
                         </Box>

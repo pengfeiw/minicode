@@ -60,9 +60,6 @@ export const styles: Styles = {
                 colorMode === "dark"
                     ? "var(--colors-accent-300)"
                     : "var(--colors-accent-500)",
-            "&:hover": {
-                textDecoration: "underline"
-            },
             "&:focus": {
                 boxShadow: "outline"
             }

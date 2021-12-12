@@ -4,7 +4,7 @@ import AvatarSvg from "./avatar";
 import {ColorModeSwitch} from "src/components/colorModeSwitch";
 import {GithubLink} from "src/components/githubLink";
 import {AccentPicker} from "src/components/accent";
-import {OutgoingLink} from "src/components/link";
+import {OutgoingLink, RouteLink} from "src/components/link";
 import {useColorMode} from "@chakra-ui/react";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 
@@ -29,13 +29,12 @@ const Header: React.FC<Props> = (props) => {
     );
 
     return (
-        <Flex flexDirection="row" justifyContent="space-between" mb="40px" wrap="wrap" gridRowGap="15px" gridColumnGap="15px">
-            <OutgoingLink href="https://pengfeiw.github.io/hellolinearalgebra/" target="_blank">
+        <Flex alignItems="center" flexDirection="row" justifyContent="space-between" mb="40px" wrap="wrap" gridRowGap="15px" gridColumnGap="15px">
+            <RouteLink to="https://pengfeiw.github.io/minicode/">
                 <HStack alignItems="end">
                     <AvatarSvg />
-                    <Text fontSize="17px" fontWeight="bold">MINI CODE</Text>
                 </HStack>
-            </OutgoingLink>
+            </RouteLink>
             <HStack>
                 {
                     openInNewWindow ? OpenInNewWin : <></>
