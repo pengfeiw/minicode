@@ -1,6 +1,6 @@
 {
-    "titleTemplate": "%s | 你好，线性代数",
-    "description": "你好，线性代数。",
+    "titleTemplate": "%s | MINICODE",
+    "description": "MINICODE是一个小程序发布平台，开源，共享。",
     "additionalMetaTags": [
         {
             "property": "author",
@@ -8,7 +8,7 @@
         },
         {
             "property": "keywords",
-            "content": "线性代数,计算机图形学,向量,矩阵,行列式,线性方程组,math,CG,computer graphics,linear algebra"
+            "content": "minicode,mini code,web development,javascript,typescript,graphics,CG,computer graphics"
         }
     ],
     "twitter": {

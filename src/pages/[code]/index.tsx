@@ -3,9 +3,8 @@ import React from "react";
 import codes, {Code as ICode} from "src/server/codes";
 import {Text, Flex} from "@chakra-ui/react";
 import Header from "src/components/header";
-import Footer from "src/components/footer";
 import {LayoutPage} from "../../typing";
-
+import {NextSeo} from "next-seo";
 
 interface CodeProps {
     code: ICode;
@@ -20,6 +19,18 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
 
     return (
         <>
+            <NextSeo
+                title={code.name}
+                description={code.description}
+                openGraph={{
+                    title: code.name,
+                    description: code.description
+                }}
+                additionalMetaTags={[
+                    {property: "author", content: "王鹏飞"},
+                    {property: "keywords", content: code.keywords.join(",")}
+                ]}
+            />
             <Header githubSrc={code.repository} newWindowSrc={code.url} />
             <Text mb={2} fontSize="sm">
                 {code.description}
