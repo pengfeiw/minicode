@@ -5,7 +5,9 @@ import {OutgoingLink} from "src/components/link";
 const Footer = () => (
     <Box mt="60px">
         <Text textAlign="center">
-            <OutgoingLink href="https://pengfeiw.github.io/hellolinearalgebra/sitemap.xml">📖sitemap</OutgoingLink>
+            <OutgoingLink href="https://pengfeiw.github.io/minicode/sitemap.xml">📖sitemap </OutgoingLink>
+            |
+            <OutgoingLink href="https://pengfeixc.com"> 🏔WangPF</OutgoingLink>
         </Text>
         <Text textAlign="center" mt="30px">
             本站采用

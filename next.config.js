@@ -1,4 +1,7 @@
 const withPlugins = require("next-compose-plugins")
+const {createSitemap} = require("./sitemap");
+
+createSitemap();
 
 const IsDevelopment = process.env.NODE_ENV === "development";
 const nextConfig = {

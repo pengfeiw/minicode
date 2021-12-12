@@ -1,6 +1,7 @@
 const {SitemapStream, XMLToSitemapItemStream} = require("sitemap");
 const nodeFs = require("fs");
 const path = require("path");
+const codes = require("./src/server/codes.json");
 
 /**
  * generate sitemap.xml
@@ -13,14 +14,11 @@ const createSitemap = () => {
     // home
     sitemap.write({url: "/", changefreq: "monthly", priority: 1});
     // hellolinearalgebra home
-    sitemap.write({url: "/hellolinearalgebra", changefreq: "monthly", priority: 0.9});
+    sitemap.write({url: "/minicode", changefreq: "monthly", priority: 0.9});
 
-    const postsDir = path.join(__dirname, "./src/pages/chapters");
-    const files = nodeFs.readdirSync(postsDir);
-
-    for (let i = 0; i < files.length; i++) {
-        // chapters
-        sitemap.write({url: `/hellolinearalgebra/${files[i].slice(0, files[i].lastIndexOf("."))}`, changefreq: "weekly", priority: 0.8});
+    for (let i = 0; i < codes.length; i++) {
+        // codes
+        sitemap.write({url: `/minicode/${codes[i].path}`, changefreq: "weekly", priority: 0.8});
     }
 
     sitemap.end();
