@@ -22,6 +22,7 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
         <>
             <NextSeo
                 title={code.name}
+                titleTemplate="%s | MINICODE"
                 description={code.description}
                 openGraph={{
                     title: code.name,
@@ -32,7 +33,7 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
                     {property: "keywords", content: code.keywords.join(",")}
                 ]}
             />
-            <Header githubSrc={code.repository} newWindowSrc={code.url} />
+            <Header githubSrc={code.repository} newWindowSrc={code.url} blogSrc={code.blog} />
             <Text mb={2} fontSize="sm">
                 《<H1 display="inline" fontWeight="normal" fontSize="inherit">{code.name}</H1>》
                 {code.description}

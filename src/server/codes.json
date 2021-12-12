@@ -18,7 +18,8 @@
             "CG",
             "Computer Grahpics"
         ],
-        "repository": "https://github.com/pengfeiw/3d-tetris"
+        "repository": "https://github.com/pengfeiw/3d-tetris",
+        "blog": "https://pengfeixc.com/blogs/minicode/3d-tetris"
     },
     {
         "path": "react-paint",
@@ -35,7 +36,8 @@
             "CG",
             "React"
         ],
-        "repository": "https://github.com/pengfeiw/react-paint"
+        "repository": "https://github.com/pengfeiw/react-paint",
+        "blog": "https://pengfeixc.com/blogs/minicode/react-paint-tool"
     },
     {
         "path": "solar-system",
@@ -51,6 +53,7 @@
             "WebGL",
             "三维"
         ],
-        "repository": "https://github.com/pengfeiw/solar-system"
+        "repository": "https://github.com/pengfeiw/solar-system",
+        "blog": "https://pengfeixc.com/blogs/minicode/webgl-solar-system"
     }
 ]

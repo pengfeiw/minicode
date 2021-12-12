@@ -6,23 +6,35 @@ import {GithubLink} from "src/components/githubLink";
 import {AccentPicker} from "src/components/accent";
 import {OutgoingLink, RouteLink} from "src/components/link";
 import {useColorMode} from "@chakra-ui/react";
-import {ExternalLinkIcon} from "@chakra-ui/icons";
+import {ExternalLinkIcon, AttachmentIcon} from "@chakra-ui/icons";
 
 interface Props {
     githubSrc?: string;
+    blogSrc?: string;
     newWindowSrc?: string;
 }
 
 const Header: React.FC<Props> = (props) => {
-    const {githubSrc, newWindowSrc} = props;
+    const {githubSrc, blogSrc, newWindowSrc} = props;
     const {colorMode} = useColorMode();
     const openInNewWindow = newWindowSrc ? true : false;
+    const hasBlogSrc = blogSrc ? true : false;
 
     const OpenInNewWin = (
         <OutgoingLink href={newWindowSrc}>
             <IconButton
                 aria-label={colorMode === "dark" ? "Dark Mode" : "Light Mode"}
                 icon={<ExternalLinkIcon />}
+                isRound
+            />
+        </OutgoingLink>
+    );
+
+    const BlogLink = (
+        <OutgoingLink href={blogSrc}>
+            <IconButton
+                aria-label={colorMode === "dark" ? "Dark Mode" : "Light Mode"}
+                icon={<AttachmentIcon />}
                 isRound
             />
         </OutgoingLink>
@@ -38,6 +50,9 @@ const Header: React.FC<Props> = (props) => {
             <HStack>
                 {
                     openInNewWindow ? OpenInNewWin : <></>
+                }
+                {
+                    hasBlogSrc ? BlogLink : <></>
                 }
                 <GithubLink src={githubSrc} />
                 <AccentPicker

@@ -1,8 +1,9 @@
 import codes from "./codes.json";
 
 export interface Code {
-    path: string;
     name: string;
+    blog: string;
+    path: string;
     url: string;
     image: string;
     description: string;
