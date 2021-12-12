@@ -1,4 +1,5 @@
-interface Code {
+export interface Code {
+    path: string;
     name: string;
     url: string;
     image: string;
@@ -9,6 +10,7 @@ interface Code {
 
 const getCodes = (): Code[] => [
     {
+        path: "3d-tetris",
         name: "3D 俄罗斯方块（3d-tetris）",
         url: "https://pengfeiw.github.io/3d-tetris",
         image: "./images/3d-tetris.jpg",
@@ -17,6 +19,7 @@ const getCodes = (): Code[] => [
         repository: "https://github.com/pengfeiw/3d-tetris"
     },
     {
+        path: "react-paint",
         name: "React Paint",
         url: "https://pengfeiw.github.io/react-paint",
         image: "./images/react-paint.jpg",
@@ -25,6 +28,7 @@ const getCodes = (): Code[] => [
         repository: "https://github.com/pengfeiw/react-paint"
     },
     {
+        path: "solar-system",
         name: "太阳系动画（Solar System）",
         url: "https://pengfeiw.github.io/solar-system",
         image: "./images/solar-system.jpg",

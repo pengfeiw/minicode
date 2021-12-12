@@ -1,5 +1,3 @@
-# 你好，线性代数
+# MINICODE
 
-关于线性代数的几何意义的教程。
-
-在线地址：https://pengfeiw.github.io/hellolinearalgebra/
+一个小程序平台，[https://pengfeiw.github.io/minicode/](https://pengfeiw.github.io/minicode/)。
