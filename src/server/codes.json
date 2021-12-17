@@ -55,5 +55,23 @@
         ],
         "repository": "https://github.com/pengfeiw/solar-system",
         "blog": "https://pengfeixc.com/blogs/minicode/webgl-solar-system"
+    },
+    {
+        "path": "threejs-rubik",
+        "name": "RubikCube - 魔方",
+        "url": "https://pengfeiw.github.io/rubiks-cube",
+        "image": "./images/rubiks-cube.jpg",
+        "description": "基于HTML的使用 Threejs 和 TypeScript 制作的3D魔方（rubik cube）游戏",
+        "keywords": [
+            "魔方",
+            "rubik",
+            "Threejs",
+            "three",
+            "webgl",
+            "三维",
+            "cube"
+        ],
+        "repository": "https://github.com/pengfeiw/rubiks-cube",
+        "blog": "https://www.pengfeixc.com/blogs/minicode/threejs-rubik"
     }
 ]
