@@ -38,7 +38,11 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
                 《<H1 display="inline" fontWeight="normal" fontSize="inherit">{code.name}</H1>》
                 {code.description}
             </Text>
-            <iframe src={code.url} style={{flexGrow: 1, borderRadius: "5px"}} />
+            <iframe src={code.url} style={{
+                flexGrow: 1,
+                borderRadius: "5px",
+                boxShadow: "rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 10%) 0px -4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px"
+            }} />
         </>
     );
 };
