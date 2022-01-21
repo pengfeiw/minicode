@@ -92,5 +92,46 @@
         ],
         "repository": "https://github.com/pengfeiw/threejs-case/tree/main/src/case/gallery",
         "blog": "https://www.pengfeixc.com/blogs/minicode/threejs-gallery"
+    },
+    {
+        "path": "threejs-star",
+        "name": "Star - 星空",
+        "url": "https://pengfeiw.github.io/threejs-case/star",
+        "image": "./images/star.jpg",
+        "description": "基于 ThreeJs 制作的星空",
+        "keywords": [
+            "3d 星空",
+            "星空",
+            "3d",
+            "动画",
+            "threejS",
+            "three",
+            "webgl",
+            "三维"
+        ],
+        "repository": "https://github.com/pengfeiw/threejs-case/tree/main/src/case/star",
+        "blog": "https://www.pengfeixc.com/blogs/minicode/threejs-star"
+    },
+    {
+        "path": "threejs-torch",
+        "name": "Torch - 火把",
+        "url": "https://pengfeiw.github.io/threejs-case/torch",
+        "image": "./images/torch.jpg",
+        "description": "基于 ThreeJs 制作的火焰效果",
+        "keywords": [
+            "3d 火把",
+            "火",
+            "火焰",
+            "火把",
+            "fire",
+            "3d",
+            "动画",
+            "threejS",
+            "three",
+            "webgl",
+            "三维"
+        ],
+        "repository": "https://github.com/pengfeiw/threejs-case/tree/main/src/case/torch",
+        "blog": "https://www.pengfeixc.com/blogs/minicode/threejs-torch"
     }
 ]
