@@ -21,7 +21,7 @@ const Header: React.FC<Props> = (props) => {
     const hasBlogSrc = blogSrc ? true : false;
 
     const OpenInNewWin = (
-        <OutgoingLink href={newWindowSrc}>
+        <OutgoingLink href={newWindowSrc} title="open in new window">
             <IconButton
                 aria-label={colorMode === "dark" ? "Dark Mode" : "Light Mode"}
                 icon={<ExternalLinkIcon />}
@@ -31,7 +31,7 @@ const Header: React.FC<Props> = (props) => {
     );
 
     const BlogLink = (
-        <OutgoingLink href={blogSrc}>
+        <OutgoingLink href={blogSrc} title="open related article">
             <IconButton
                 aria-label={colorMode === "dark" ? "Dark Mode" : "Light Mode"}
                 icon={<AttachmentIcon />}
@@ -58,8 +58,9 @@ const Header: React.FC<Props> = (props) => {
                 <AccentPicker
                     aria-label="Accent Color Picker"
                     zIndex={1}
+                    title="change theme color"
                 />
-                <ColorModeSwitch />
+                <ColorModeSwitch title="switch to light or dark mode" />
             </HStack>
         </Flex>
     );

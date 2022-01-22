@@ -17,7 +17,12 @@ const Home: LayoutPage = () => {
                 {
                     codes.map((code) => (
                         <Box width="100%" key={code.url} textAlign="center" borderRadius="5px" overflow="hidden">
-                            <Box position="relative" height="100%">
+                            <Box
+                                position="relative"
+                                height="100%"
+                                onClick={() => window.open(`./${code.path}`, "_blank")}
+                                cursor="pointer"
+                            >
                                 <Image width="100%" height="100%" src={code.image} alt={code.name} />
                                 <Text p="5px 0px" position="absolute" bottom="0" color={Textcolor} bg={backgroundColor} width="100%">
                                     {code.name}
@@ -39,9 +44,7 @@ const Home: LayoutPage = () => {
                                         background: "#bababacc"
                                     }}
                                 >
-                                    <OutgoingLink flexGrow={0} href={`./${code.path}`} cursor="pointer">
-                                        {code.description}
-                                    </OutgoingLink>
+                                    {code.description}
                                 </Flex>
                             </Box>
                         </Box>

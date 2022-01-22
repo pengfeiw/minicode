@@ -14,7 +14,7 @@ export const GithubLink: React.FC<Props> = (props) => {
 
     const {colorMode} = useColorMode();
     return (
-        <OutgoingLink href={href}>
+        <OutgoingLink href={href} title="view source code">
             <IconButton
                 aria-label={colorMode === "dark" ? "Dark Mode" : "Light Mode"}
                 icon={<GoMarkGithub />}

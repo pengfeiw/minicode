@@ -16,7 +16,7 @@ const Footer = () => (
         </Text>
         <Text textAlign="center" mt="30px">
             本站采用
-            <OutgoingLink href="https://nextjs.org/">NextJs</OutgoingLink>
+            <OutgoingLink href="https://nextjs.org/">NextJS</OutgoingLink>
             和
             <OutgoingLink href="https://chakra-ui.com/">ChakraUI</OutgoingLink>
             搭建，
