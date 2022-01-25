@@ -11,6 +11,6 @@ export interface Code {
     repository: string;
 }
 
-const getCodes = (): Code[] => codes;
+const getCodes = (): Code[] => (codes as any).reverse();
 
 export default getCodes();

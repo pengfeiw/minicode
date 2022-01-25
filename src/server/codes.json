@@ -85,7 +85,7 @@
             "展览",
             "3d",
             "动画",
-            "threejS",
+            "threejs",
             "three",
             "webgl",
             "三维"
@@ -104,7 +104,7 @@
             "星空",
             "3d",
             "动画",
-            "threejS",
+            "threejs",
             "three",
             "webgl",
             "三维"
@@ -126,12 +126,32 @@
             "fire",
             "3d",
             "动画",
-            "threejS",
+            "threejs",
             "three",
             "webgl",
             "三维"
         ],
         "repository": "https://github.com/pengfeiw/threejs-case/tree/main/src/case/torch",
         "blog": "https://www.pengfeixc.com/blogs/minicode/threejs-torch"
+    },
+    {
+        "path": "pixel-image",
+        "name": "Pixel Image - 像素图片",
+        "url": "https://pengfeiw.github.io/threejs-case/pixel-image",
+        "image": "./images/pixelImage.jpg",
+        "description": "基于 ThreeJs 制作的粒子像素图片",
+        "keywords": [
+            "3d",
+            "粒子",
+            "particles",
+            "像素",
+            "像素图片",
+            "动画",
+            "threejs",
+            "three",
+            "webgl",
+            "三维"
+        ],
+        "repository": "https://github.com/pengfeiw/threejs-case/tree/main/src/case/pixelImage"
     }
 ]
