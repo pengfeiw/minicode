@@ -16,9 +16,8 @@ const Home: LayoutPage = () => {
             <Grid wrap="wrap" justifyContent="space-around" gridRowGap={5} gridTemplateColumns={["repeat(1, 95%)", "repeat(2, 45%)", "repeat(3,30%)"]}>
                 {
                     codes.map((code) => (
-
                         <Box width="100%" key={code.url} textAlign="center" borderRadius="5px" overflow="hidden">
-                            <a href={`./${code.path}`} target="_blank">
+                            <a href={`./${code.path}`} target="_blank" rel="noreferrer">
                                 <Box
                                     position="relative"
                                     height="100%"

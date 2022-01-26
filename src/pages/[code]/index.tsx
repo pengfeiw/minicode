@@ -2,7 +2,7 @@ import {GetStaticProps} from "next";
 import React from "react";
 import codes, {Code as ICode} from "src/server/codes";
 import {Text, Flex} from "@chakra-ui/react";
-import Header from "src/components/header";
+import SubHeader from "src/components/header/subHeader";
 import {LayoutPage} from "../../typing";
 import {NextSeo} from "next-seo";
 import {H1} from "src/components/primitives/typography";
@@ -33,15 +33,9 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
                     {property: "keywords", content: code.keywords.join(",")}
                 ]}
             />
-            <Header githubSrc={code.repository} newWindowSrc={code.url} blogSrc={code.blog} />
-            <Text mb={2} fontSize="sm">
-                《<H1 display="inline" fontWeight="normal" fontSize="inherit">{code.name}</H1>》
-                {code.description}
-            </Text>
+            <SubHeader title={code.name} description={code.description} githubSrc={code.repository} newWindowSrc={code.url} blogSrc={code.blog} />
             <iframe src={code.url} style={{
-                flexGrow: 1,
-                borderRadius: "5px",
-                boxShadow: "rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 10%) 0px -4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px"
+                flexGrow: 1
             }} />
         </>
     );
@@ -70,7 +64,6 @@ Code.getLayout = (page) => {
     return (
         <Flex
             margin="0 auto"
-            padding="20px 10px"
             flexDir="column"
             minH="100vh"
         >
