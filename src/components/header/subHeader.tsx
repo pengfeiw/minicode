@@ -61,7 +61,7 @@ const Header: React.FC<Props> = (props) => {
                 <Box>{description}</Box>
             </Box>
             <HStack>
-                <OutgoingLink href="../" title="home">
+                <OutgoingLink href="https://pengfeiw.github.io/minicode" title="home">
                     <IconButton
                         aria-label="Go home"
                         icon={<GoHome />}
