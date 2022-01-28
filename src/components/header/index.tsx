@@ -16,7 +16,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <>
-            <Box mb="40px">
+            <Box mb="40px" zIndex={1}>
                 <VStack alignItems="start">
                     <RouteLink to="https://pengfeiw.github.io/minicode/">
                         <AvatarSvg />

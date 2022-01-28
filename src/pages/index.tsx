@@ -4,7 +4,7 @@ import Header from "src/components/header";
 import {LayoutPage} from "../typing";
 import codes from "src/server/codes";
 import {useLinkColor} from "src/ui/theme";
-import {OutgoingLink, RouteLink} from "src/components/link";
+import GlslBackground from "src/components/glslBackgrounds";
 
 const Home: LayoutPage = () => {
     const Textcolor = useLinkColor();
@@ -58,19 +58,22 @@ const Home: LayoutPage = () => {
 
 Home.getLayout = (page) => {
     return (
-        <Flex
-            maxW={1000}
-            margin="0 auto"
-            padding="20px 10px"
-            flexDir="column"
-            minH="100vh"
-        >
-            <Header />
-            <Box flexGrow={1}>
-                {page}
-            </Box>
-            <Footer />
-        </Flex>
+        <>
+            <GlslBackground />
+            <Flex
+                maxW={1000}
+                margin="0 auto"
+                padding="20px 10px"
+                flexDir="column"
+                minH="100vh"
+            >
+                <Header />
+                <Box flexGrow={1}>
+                    {page}
+                </Box>
+                <Footer />
+            </Flex>
+        </>
     );
 }
 
