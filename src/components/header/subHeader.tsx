@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Button, Flex, HStack, IconButton} from "@chakra-ui/react";
+import {Box, Flex, HStack, IconButton} from "@chakra-ui/react";
 import {ColorModeSwitch} from "src/components/colorModeSwitch";
 import {GithubLink} from "src/components/githubLink";
 import {AccentPicker} from "src/components/accent";
@@ -8,7 +8,7 @@ import {useColorMode} from "@chakra-ui/react";
 import {ExternalLinkIcon, AttachmentIcon} from "@chakra-ui/icons";
 import {H1} from "../primitives/typography";
 import {GoHome} from "react-icons/go";
-import {resolveHref} from "next/dist/shared/lib/router/router";
+import {useLinkColor} from "src/ui/theme";
 
 interface Props {
     githubSrc?: string;
@@ -56,7 +56,7 @@ const Header: React.FC<Props> = (props) => {
         >
             <Box>
                 <Box>
-                    <H1 fontWeight="normal" fontSize="20px" m={0} mb="5px">{title}</H1>
+                    <H1 fontWeight="normal" fontSize="20px" m={0} mb="5px" color={useLinkColor()}>{title}</H1>
                 </Box>
                 <Box>{description}</Box>
             </Box>
@@ -80,7 +80,7 @@ const Header: React.FC<Props> = (props) => {
                     zIndex={1}
                     title="change theme color"
                 />
-                <ColorModeSwitch title="switch to light or dark mode" />
+                {/* <ColorModeSwitch title="switch to light or dark mode" /> */}
             </HStack>
         </Flex>
     );
