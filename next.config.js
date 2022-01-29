@@ -1,5 +1,7 @@
 const withPlugins = require("next-compose-plugins")
 const {createSitemap} = require("./sitemap");
+const {merge} = require("webpack-merge");
+const webpackconfig = require("./webpack.config");
 
 createSitemap();
 
@@ -10,4 +12,7 @@ const nextConfig = {
     assetPrefix: IsDevelopment ? "" : "/minicode",
 };
 
-module.exports = withPlugins([], nextConfig);
+module.exports = withPlugins([], {
+    ...nextConfig,
+    webpack: (config, options) => merge(config, webpackconfig)
+});

@@ -40,7 +40,7 @@ const Header: React.FC<Props> = (props) => {
                     zIndex={1}
                     title="change theme color"
                 />
-                <ColorModeSwitch title="switch to light or dark mode" />
+                {/* <ColorModeSwitch title="switch to light or dark mode" /> */}
             </VStack>
         </>
     );

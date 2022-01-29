@@ -5,9 +5,10 @@ import {useLocalSetting} from "src/hooks/useLocalSetting";
 import glslBackgrounds, {GlslBackgroundKeys} from "./glsl";
 
 const GlslBackground = () => {
-    const [key] = useLocalSetting<GlslBackgroundKeys>("glslBackgroundKey", "defalultBackground");
+    const [key] = useLocalSetting<GlslBackgroundKeys>("glslBackgroundKey", "defaultBackground");
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [sandbox, setSandbox] = useState<any>();
+
     useEffect(() => {
         const GlslCanvas = require("./glslCanvas");
         const canvas = canvasRef.current;
