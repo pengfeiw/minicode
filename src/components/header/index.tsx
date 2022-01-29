@@ -4,6 +4,7 @@ import AvatarSvg from "./avatar";
 import {ColorModeSwitch} from "src/components/colorModeSwitch";
 import {GithubLink} from "src/components/githubLink";
 import {AccentPicker} from "src/components/accent";
+import {BackgroundPicker} from "src/components/backgroundPicker";
 import {OutgoingLink, RouteLink} from "src/components/link";
 import {Paragraph} from "../primitives/typography";
 
@@ -37,8 +38,11 @@ const Header: React.FC<Props> = (props) => {
                 <GithubLink src={githubSrc} />
                 <AccentPicker
                     aria-label="Accent Color Picker"
-                    zIndex={1}
                     title="change theme color"
+                />
+                <BackgroundPicker
+                    aria-label="Background Picker"
+                    title="change background"
                 />
                 {/* <ColorModeSwitch title="switch to light or dark mode" /> */}
             </VStack>
