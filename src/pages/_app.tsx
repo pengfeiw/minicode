@@ -11,7 +11,7 @@ import defaultSeoConfig from "../next-seo.json";
 function MyApp({Component, pageProps}: AppProps) {
 
     const getLayout = (Component as any).getLayout || ((page: any) => page);
-
+    console.log(defaultTheme);
     return (
         <>
             <DefaultSeo {...defaultSeoConfig} />

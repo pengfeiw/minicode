@@ -4,7 +4,7 @@ import {OutgoingLink} from "src/components/link";
 import {H1} from "../primitives/typography";
 
 const Footer = () => (
-    <Box mt="60px">
+    <Box mt="60px" zIndex={1}>
         <Box textAlign="center">
             <H1
                 fontSize="inherit"

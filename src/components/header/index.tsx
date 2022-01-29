@@ -16,7 +16,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <>
-            <Box mb="40px">
+            <Box mb="40px" zIndex={1}>
                 <VStack alignItems="start">
                     <RouteLink to="https://pengfeiw.github.io/minicode/">
                         <AvatarSvg />
@@ -40,7 +40,7 @@ const Header: React.FC<Props> = (props) => {
                     zIndex={1}
                     title="change theme color"
                 />
-                <ColorModeSwitch title="switch to light or dark mode" />
+                {/* <ColorModeSwitch title="switch to light or dark mode" /> */}
             </VStack>
         </>
     );

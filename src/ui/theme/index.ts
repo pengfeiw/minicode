@@ -10,13 +10,15 @@ export type {ColorKeys} from './foundations/colors'
 
 export function makeTheme(overrides: ThemeOverride = {}) {
     const theme = extendTheme({
+        initialColorMode: 'dark',
+        useSystemColorMode: false,
         colors,
         styles,
         textStyles,
         // fonts: defaultTheme.fonts,
         // shadows: defaultTheme.shadows
     })
-    return mergeWith(theme, overrides)
+    return mergeWith(overrides, theme)
 }
 
 export const theme = makeTheme()
