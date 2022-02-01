@@ -8,7 +8,7 @@ uniform float u_time;
 
 void main() {
     vec3 gridColor = vec3(0.17);
-    vec3 backgroundColor = vec3(0.21);
+    vec3 backgroundColor = vec3(0.1);
 	vec2 st = gl_FragCoord.xy/u_resolution;
 
     vec3 pixel = backgroundColor;
