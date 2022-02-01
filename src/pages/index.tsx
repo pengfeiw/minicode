@@ -2,9 +2,10 @@ import {Flex, Grid, Box, Image, Text, useColorModeValue} from "@chakra-ui/react"
 import Footer from "src/components/footer";
 import Header from "src/components/header";
 import {LayoutPage} from "../typing";
-import codes from "src/server/codes";
+import codes, {Code} from "src/server/codes";
 import {useLinkColor} from "src/ui/theme";
 import GlslBackground from "src/components/glslBackgrounds";
+import {useEffect, useState} from "react";
 
 const Home: LayoutPage = () => {
     const Textcolor = useLinkColor();
@@ -23,10 +24,8 @@ const Home: LayoutPage = () => {
                             borderRadius="5px"
                             overflow="hidden"
                             transition="1s"
-                            position="relative"
-                            bottom={0}
                             _hover={{
-                                bottom: "15px",
+                                transform: "translateY(-6px)",
                                 boxShadow: "rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px"
                             }}
                         >
@@ -36,7 +35,12 @@ const Home: LayoutPage = () => {
                                     height="100%"
                                     cursor="pointer"
                                 >
-                                    <Image width="100%" height="100%" src={code.image} alt={code.name} />
+                                    <Image
+                                        width="100%"
+                                        height="100%"
+                                        src={code.image}
+                                        alt={code.name}
+                                    />
                                     <Text p="5px 0px" position="absolute" bottom="0" color={Textcolor} bg={backgroundColor} width="100%">
                                         {code.name}
                                     </Text>

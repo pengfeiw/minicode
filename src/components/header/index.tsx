@@ -33,7 +33,7 @@ const Header: React.FC<Props> = (props) => {
                 position="fixed"
                 right={["10px", "20px", "50px"]}
                 bottom="35px"
-                zIndex={1}
+                zIndex={2}
             >
                 <GithubLink src={githubSrc} />
                 <AccentPicker
