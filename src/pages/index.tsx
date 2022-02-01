@@ -16,7 +16,20 @@ const Home: LayoutPage = () => {
             <Grid wrap="wrap" justifyContent="space-around" gridRowGap={5} gridTemplateColumns={["repeat(1, 95%)", "repeat(2, 45%)", "repeat(3,30%)"]}>
                 {
                     codes.map((code) => (
-                        <Box width="100%" key={code.url} textAlign="center" borderRadius="5px" overflow="hidden">
+                        <Box
+                            width="100%"
+                            key={code.url}
+                            textAlign="center"
+                            borderRadius="5px"
+                            overflow="hidden"
+                            transition="1s"
+                            position="relative"
+                            bottom={0}
+                            _hover={{
+                                bottom: "15px",
+                                boxShadow: "rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px"
+                            }}
+                        >
                             <a href={`./${code.path}`} target="_blank" rel="noreferrer">
                                 <Box
                                     position="relative"
