@@ -12,7 +12,6 @@ import "rc-pagination/assets/index.css";
 const Home: LayoutPage = () => {
     const Textcolor = useLinkColor();
     const backgroundColor = useColorModeValue("#f7fafc", "#3d4756");
-
     const [showcodes, setShowcodes] = useState<Code[]>([]);
     const [pageIndex, setPageIndex] = useState<number>(1);
     const [pageSize, setPageSize] = useState<number>(9);
