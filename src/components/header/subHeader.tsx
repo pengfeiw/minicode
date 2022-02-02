@@ -77,7 +77,6 @@ const Header: React.FC<Props> = (props) => {
                 <GithubLink src={githubSrc} />
                 <AccentPicker
                     aria-label="Accent Color Picker"
-                    zIndex={1}
                     title="change theme color"
                 />
                 {/* <ColorModeSwitch title="switch to light or dark mode" /> */}

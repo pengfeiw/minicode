@@ -79,6 +79,16 @@ export const styles: Styles = {
         "img": {
             boxShadow: "0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)",
             borderRadius: "5px"
+        },
+        ".rc-pagination *": {
+            backgroundColor: "#414756 !important",
+            border: "none !important",
+            borderRadius: "2px"
+        },
+        ".rc-pagination .rc-pagination-item-active *": {
+            color: colorMode === "dark"
+            ? "var(--colors-accent-300)"
+            : "var(--colors-accent-500)",
         }
     })
 }
