@@ -17,7 +17,7 @@ const Header: React.FC<Props> = (props) => {
 
     return (
         <>
-            <Box mb="40px" zIndex={1}>
+            <Box mb="40px">
                 <VStack alignItems="start">
                     <RouteLink to="https://pengfeiw.github.io/minicode/">
                         <AvatarSvg />
@@ -33,7 +33,6 @@ const Header: React.FC<Props> = (props) => {
                 position="fixed"
                 right={["10px", "20px", "50px"]}
                 bottom="35px"
-                zIndex={2}
             >
                 <GithubLink src={githubSrc} />
                 <AccentPicker

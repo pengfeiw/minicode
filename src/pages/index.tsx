@@ -6,17 +6,40 @@ import codes, {Code} from "src/server/codes";
 import {useLinkColor} from "src/ui/theme";
 import GlslBackground from "src/components/glslBackgrounds";
 import {useEffect, useState} from "react";
+import Pagination from "rc-pagination";
+import "rc-pagination/assets/index.css";
 
 const Home: LayoutPage = () => {
     const Textcolor = useLinkColor();
-
     const backgroundColor = useColorModeValue("#f7fafc", "#3d4756");
+
+    const [showcodes, setShowcodes] = useState<Code[]>([]);
+    const [pageIndex, setPageIndex] = useState<number>(1);
+    const [pageSize, setPageSize] = useState<number>(9);
+
+    useEffect(() => {
+        const start = pageSize * (pageIndex - 1);
+        const end = Math.min(start + pageSize, codes.length);
+        setShowcodes(codes.slice(start, end));
+    }, [pageIndex, setPageSize]);
 
     return (
         <Box>
+            <Box
+                textAlign={"right"}
+                paddingRight="20px"
+                mb="10px"
+            >
+                <Pagination
+                    pageSize={pageSize}
+                    current={pageIndex}
+                    total={codes.length}
+                    onChange={(page: number) => setPageIndex(page)}
+                />
+            </Box>
             <Grid wrap="wrap" justifyContent="space-around" gridRowGap={5} gridTemplateColumns={["repeat(1, 95%)", "repeat(2, 45%)", "repeat(3,30%)"]}>
                 {
-                    codes.map((code) => (
+                    showcodes.map((code) => (
                         <Box
                             width="100%"
                             key={code.url}
@@ -83,6 +106,7 @@ Home.getLayout = (page) => {
                 padding="20px 10px"
                 flexDir="column"
                 minH="100vh"
+                position="relative"
             >
                 <Header />
                 <Box flexGrow={1}>
