@@ -1,6 +1,6 @@
 import React from "react";
 import type {AppProps} from "next/app"
-import {ChakraProvider} from "@chakra-ui/react";
+import {ChakraProvider, DarkMode} from "@chakra-ui/react";
 import {theme as defaultTheme} from "src/ui/theme";
 import "polyfill-object.fromentries";
 import {AccentGlobal} from "src/components/accent";
@@ -17,7 +17,10 @@ function MyApp({Component, pageProps}: AppProps) {
             <ChakraProvider theme={defaultTheme}>
                 <AccentGlobal />
                 <PrismGlobal />
-                {getLayout(<Component {...pageProps} />)}
+                {/* force to drak mode */}
+                <DarkMode>
+                    {getLayout(<Component {...pageProps} />)}
+                </DarkMode>
             </ChakraProvider>
         </>
     );
