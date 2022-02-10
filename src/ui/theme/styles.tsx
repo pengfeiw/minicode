@@ -34,41 +34,42 @@ export const styles: Styles = {
             fontSmooth: "auto",
         },
         "html, body": {
-            bg: colorMode === "light" ? "white" : "gray.1000",
-            color: colorMode === "light" ? "gray.800" : "gray.400"
+            // bg: colorMode === "light" ? "white" : "gray.900",
+            // color: colorMode === "light" ? "gray.800" : "gray.400"
+            bg: "gray.900",
+            color: "gray.400"
         },
         "*": {
-            borderColor: colorMode === "light" ? "gray.400" : "gray.700"
+            // borderColor: colorMode === "light" ? "gray.400" : "gray.700"
+            borderColor: "gray.700"
         },
         "::placeholder": {
-            color: colorMode === "light" ? "gray.500" : "gray.500"
+            // color: colorMode === "light" ? "gray.500" : "gray.500"
+            color: "gray.500"
         },
         mark: {
             background: "none",
             color: "inherit"
         },
         del: {
-            textDecoration: "none"
+            textDecoration: "var(--chakra-colors-white);"
         },
         ".darkModeInvertLuminosity": {
-            filter: colorMode === "dark" ? "invert(93%) hue-rotate(180deg)" : "none"
+            // filter: colorMode === "dark" ? "invert(93%) hue-rotate(180deg)" : "none"
+            filter: "invert(93%) hue-rotate(180deg)"
         },
         "a.highlighted-link": {
             transition: "all 0.15s ease-out",
             outline: "none",
-            color:
-                colorMode === "dark"
-                    ? "var(--colors-accent-300)"
-                    : "var(--colors-accent-500)",
+            // color: colorMode === "dark" ? "var(--colors-accent-300)" : "var(--colors-accent-500)",
+            color: "var(--colors-accent-300)",
             "&:focus": {
                 boxShadow: "outline"
             }
         },
         "::selection": {
-            bg:
-                colorMode === "dark"
-                    ? "var(--colors-accent-700)"
-                    : "var(--colors-accent-200)"
+            // bg: colorMode === "dark" ? "var(--colors-accent-700)" : "var(--colors-accent-200)"
+            bg: "var(--colors-accent-700)"
         },
         "ul, ol": {
             mb: 8 // "2rem"
@@ -86,9 +87,10 @@ export const styles: Styles = {
             borderRadius: "2px"
         },
         ".rc-pagination .rc-pagination-item-active *": {
-            color: colorMode === "dark"
-            ? "var(--colors-accent-300)"
-            : "var(--colors-accent-500)",
+            // color: colorMode === "dark"
+            // ? "var(--colors-accent-300)"
+            // : "var(--colors-accent-500)",
+            color: "var(--colors-accent-300)"
         }
     })
 }
