@@ -35,7 +35,8 @@ export const styles: Styles = {
         },
         "html, body": {
             bg: colorMode === "light" ? "white" : "gray.1000",
-            color: colorMode === "light" ? "gray.800" : "gray.400"
+            // color: colorMode === "light" ? "gray.800" : "gray.400"
+            color: "gray.400"
         },
         "*": {
             borderColor: colorMode === "light" ? "gray.400" : "gray.700"
