@@ -35,7 +35,8 @@ const Code: LayoutPage<CodeProps> = (props: CodeProps) => {
             />
             <SubHeader title={code.name} description={code.description} githubSrc={code.repository} newWindowSrc={code.url} blogSrc={code.blog} />
             <iframe src={code.url} style={{
-                flexGrow: 1
+                flexGrow: 1,
+                background: "white"
             }} />
         </>
     );
