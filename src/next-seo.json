@@ -1,6 +1,6 @@
 {
-    "title": "MINICODE",
-    "description": "MINICODE是一个小程序发布平台，开源，共享。",
+    "title": "Mincode",
+    "description": "Mincode 是一个小程序发布平台，平台所有内容均开源，在这里你可以找到很多有趣的东西。",
     "additionalMetaTags": [
         {
             "property": "author",
@@ -8,12 +8,12 @@
         },
         {
             "property": "keywords",
-            "content": "minicode,mini code,web development,javascript,typescript,graphics,CG,computer graphics"
+            "content": "minicode,mini code,web development,javascript,typescript,graphics,CG,computer graphics,前端项目,迷你小程序"
         }
     ],
     "twitter": {
         "cardType": "summary_large_image",
-        "site": "http://www.pengfeixc.com",
+        "site": "http://pengfeixc.com",
         "title": "王鹏飞的个人网站",
         "description": "程序员，前端开发，计算机图形学爱好者。"
     },
